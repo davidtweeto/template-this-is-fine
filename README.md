@@ -30,6 +30,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to preview in Remotion Studio.
 
+<p align="center">
+  <a href="assets/studio.png"><img src="assets/studio.png" width="100%" /></a>
+</p>
+
 ## Adding a background image
 
 A default `this-is-fine.png` is included in `public/`. To use your own image, drop it into `public/` and update `backgroundFile` in `src/Root.tsx`:
