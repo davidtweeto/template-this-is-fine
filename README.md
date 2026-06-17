@@ -52,7 +52,6 @@ All composition props are editable live in Remotion Studio via the Props panel. 
 | `lineHeight` | Line height multiplier for multi-word captions that wrap |
 | `lineDuration` | Seconds each caption stays on screen before flying off |
 | `backgroundFile` | Filename inside `public/` for the background image |
-| `watermark` | Optional watermark text in the bottom-left corner (set to `""` to hide) |
 
 ## Animation sequence
 

@@ -18,7 +18,6 @@ export const ThisIsFineSchema = z.object({
   lineHeight: z.number().min(0.5).max(3),
   lineDuration: z.number().min(0.2).max(10),
   backgroundFile: z.string(),
-  watermark: z.string(),
 });
 
 export type ThisIsFineProps = z.infer<typeof ThisIsFineSchema>;
@@ -117,7 +116,7 @@ const TextLine = ({
   );
 };
 
-export const ThisIsFineComposition = ({ line1, line2, line3, line4, transitionSpeed, fontSize, lineHeight, lineDuration, backgroundFile, watermark }: ThisIsFineProps) => {
+export const ThisIsFineComposition = ({ line1, line2, line3, line4, transitionSpeed, fontSize, lineHeight, lineDuration, backgroundFile }: ThisIsFineProps) => {
   const lines = [line1, line2, line3, line4];
   const frame = useCurrentFrame();
   const enterFrames = Math.max(1, Math.round(BASE_ENTER / transitionSpeed));
@@ -148,11 +147,7 @@ export const ThisIsFineComposition = ({ line1, line2, line3, line4, transitionSp
             display: "block",
           }}
         />
-        {watermark ? (
-          <div style={{ position: "absolute", bottom: 6, left: 14, fontSize: 24, fontFamily, fontWeight: 900, color: "#000", opacity: 0.5, letterSpacing: "0.05em" }}>
-            {watermark}
-          </div>
-        ) : null}
+        <div style={{ position: "absolute", bottom: 6, left: 14, fontSize: 24, fontFamily, fontWeight: 900, color: "#000", opacity: 0.5, letterSpacing: "0.05em" }}>tweeto</div>
         <div style={{ flex: 1, position: "relative" }}>
           {lines.map((line, i) => (
             <TextLine

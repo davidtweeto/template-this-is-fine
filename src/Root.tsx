@@ -23,7 +23,6 @@ export const RemotionRoot: React.FC = () => {
         lineHeight: 1,
         lineDuration: 1,
         backgroundFile: "this-is-fine.png",
-        watermark: "",
       }}
     />
   );
